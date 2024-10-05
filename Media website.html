@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia on Webpage</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #3498db;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+       
+        audio, video {
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+   
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Adding Multimedia to Your Webpage</h1>
+        <p>There are numerous formats for multimedia. It can be anything you can hear or see, such as images, music, sound, videos, records, films, animations, etc. This lesson will introduce you to how to add different media to your webpage to make it more interactive.</p>
+
+        <h2>Images</h2>
+        <p>Images can be easily added using the <code>&lt;img&gt;</code> tag. Here's an example:</p>
+        <img src="https://via.placeholder.com/800x400.png?text=Sample+Image" alt="Sample Image">
+
+        <h2>Audio</h2>
+        <p>You can add audio to your webpage using the <code>&lt;audio&gt;</code> tag. Here’s an example of an embedded audio file:</p>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Video</h2>
+        <p>Videos can be added using the <code>&lt;video&gt;</code> tag. Here's an example of a video embedded into the page:</p>
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Conclusion</h2>
+        <p>By adding multimedia elements like images, audio, and video, you can make your webpage more interactive and engaging for users.</p>
+    </div>
+
+</body>
+</html>
